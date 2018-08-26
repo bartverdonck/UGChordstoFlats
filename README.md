@@ -16,8 +16,8 @@ Actually, it has been competely rewritten; the visible differences are:
 # How to use
 1. Open a tab's page.
 2. Open the javascript console:<br/>
-   **Chrome**: CTRL+SHIFT+J<br/>
-   **Firefox**: CTRL+SHIFT+K<br/>
+   **Chrome**: CTRL+SHIFT+J (Mac: COMMAND+OPTION+J)<br/>
+   **Firefox**: CTRL+SHIFT+K (Mac: COMMAND+OPTION+K)<br/>
    other browsers: search the web for "open console \<browser\>"  
 3. Copy/paste the code from __UGChordsToFlats.js__ into the console, then press ENTER.
 
