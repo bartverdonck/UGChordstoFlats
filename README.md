@@ -20,4 +20,5 @@ An excerpt of [this chord chart](https://tabs.ultimate-guitar.com/tab/pvris/what
 ![picture alt](https://i.imgur.com/ekfpDOM.png "Example of a chord chart formatted in UG React, code run.")
 
 Note: the chord diagrams are deactivated, because the code that displays them also resets the chord names.
+
 [Back to top](#table-of-contents)
