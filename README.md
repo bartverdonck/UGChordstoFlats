@@ -7,10 +7,11 @@ Changes basic chord chart sharp chords to flats. Most useful in the context of t
 For (guitar or ukulele) chord charts on the site [Ultimate Guitar](www.ultimate-guitar.com/).
 
 This implementation is a fork from https://github.com/hongjes1/UGChordstoFlats.
+
 Actually, it has been competely rewritten; the visible differences are:
-* no change to the non sharped chords (the original implementation was rewriting B into Cb for instance)
+* rewrite only the sharped chords (the original implementation was also rewriting B into Cb for instance)
 * deactivate chord diagrams to prevent chord reset (on mouse over)
-* less constraints on chord names: the '#' shall be the second character (second character after '/' for bass notes)
+* works with all chord names, without limitation; the only assumption is that the '#' is the second character (second character after '/' for bass notes)
 
 # How to use
 1. Open a tab's page.
