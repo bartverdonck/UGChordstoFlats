@@ -1,40 +1,26 @@
 # Table of Contents
 1. [About UGChordstoFlats](#about-ugchordstoflats)
-    1. [The EVO interface (NOTE: deprecated)](#the-evo-interface)
-    2. [UG React, the new interface](#ug-react-the-new-interface)
+    1. [UG React, the new interface](#ug-react-the-new-interface)
 2. [How to use](#how-to-use)
 3. [Why care? A very brief Western music history/theory primer](#why-care-a-very-brief-western-music-historytheory-primer)
     1. [The UG Problem](#the-ug-problem)
 4. [Known bugs and shortcomings](#known-bugs-and-shortcomings)
-    1. [New version](#new-version)
-    2. [EVO](#evo)
-    3. [Both](#both)
 
 # About UGChordstoFlats
 As annotated within code, changes basic chord chart sharp chords to flats. Most useful in the context of transposition.
 For (guitar or ukulele) chord charts on the site [Ultimate Guitar](www.ultimate-guitar.com/).
 
-__toFlats__ only works on the EVO user interface, accessible via [this direct link](https://www.ultimate-guitar.com/?new_ug_exp=1). The chord definitions and functionality has been updated and will be checked; the EVO engine was unavailable for contributors for a period of time.
-
-### The EVO interface ###
-**Note: The EVO interface has now been deprecated in favor of UG React.**
-The EVO engine runs in a mostly-white background, includes an embedded YouTube interface, and can run in multiple languages (in an early beta). It also includes useful information about contributions and sorts contribution by both artist, name, and ultimately, type:
-- In a list of artist's contributions, all contributions with names N into one link:
-![picture alt](https://i.imgur.com/E6ZPltO.png "List of links by song name under artist Sam Smith")
-- Clicking on a song title reveals a list of contributions, sorted by submission type:
-![picture alt](https://i.imgur.com/nj3H02W.png "List of contributions for the song Lay Me Down, sorted by submission type")
-
 ### UG React, the new interface ###
-__toFlatsnew__ works on the now-updated site, which is currently in beta for contributors only and dubbed *UG React*. An excerpt of [this chord chart](https://tabs.ultimate-guitar.com/tab/pvris/whats_wrong_chords_2042995) without the changes applied can be found below:
+__toFlatsnew__ works on the now-updated site. An excerpt of [this chord chart](https://tabs.ultimate-guitar.com/tab/pvris/whats_wrong_chords_2042995) without the changes applied can be found below:
 
 ![picture alt](https://i.imgur.com/hcqDIIh.png "Example of a chord chart formatted in the beta.")
 
 [Back to top](#table-of-contents)
 
 # How to use
-1. Open a tab's page. The page should end with "`chords_###`" or "`ukulele_###`" (for ukulele chord charts), where the number indicates the submission ID; otherwise, the transposition and chord recognition interfaces do not apply.
-2. Open the console. See [here](https://www.wickedlysmart.com/hfjsconsole/) if confused on how to achieve this on different browsers.
-3. Copy/paste the code into the console. Output should look like the below:
+1. Open a tab's page.
+2. Open the console: F12 in Chrome, CTRL+SHIFT+K on Firefox. See [here](https://www.wickedlysmart.com/hfjsconsole/) if confused on how to achieve this on different browsers.
+3. Copy/paste the code into the console, then press ENTER. Output should look like the below:
 
 ![picture alt](https://i.imgur.com/ekfpDOM.png "Example of a chord chart formatted in UG React, code run.")
 
@@ -101,16 +87,8 @@ While users are allowed to insert sharps and/or flats into their submissions, th
 [Back to top](#table-of-contents)
 
 # Known bugs and shortcomings
-## New version
+
 - The javascript event onMouseOver will reset the chord names to their original value in the new tab interface. This has something to do with external code.
 - Clicking a previously opened chord diagram with the changed name will revert the chord's name to the original value within the chord diagram.
-
-## EVO
-- The chord diagrams will not display on the EVO version; however, the chord names will not change either.
-- EVO is now deprecated.
-
-## Both
-- The code's set of chord names is severely limited and is not at all exhaustive. Example: E, Emaj, EM, and Emajor all will display E major chords (notes E-G#-B), but only chord of the first format are supported.
-- This is a simple text replacement algorithm. As such, replacing "B" with "Cb" will result in chords that are shifted one character to the right. This is similar to what happens with the transposition function as it currently functions on the site. (Dm-Bb-Gm takes fewer characters than Fm-Db-Bbm etc.) This is related to unchanged `span` sizes.
 
 [Back to top](#table-of-contents)
