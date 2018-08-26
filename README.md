@@ -14,7 +14,10 @@ Actualy, it has been competely rewritten; the visible differences are:
 
 # How to use
 1. Open a tab's page.
-2. Open the javascript console: CTRL+SHIFT+J in Chrome, CTRL+SHIFT+K in Firefox, others: search the web for "open console <browser>" 
+2. Open the javascript console:<br/>
+   **Chrome**: CTRL+SHIFT+J<br/>
+   **Firefox**: CTRL+SHIFT+K<br/>
+   other browsers: search the web for "open console \<browser\>"  
 3. Copy/paste the code from __UGChordsToFlats.js__ into the console, then press ENTER.
 
 Note: the chord diagrams are deactivated, because the code that displays them also resets the chord names.
