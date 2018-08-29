@@ -1,3 +1,5 @@
+"use strict";
+
 // Next note within [A-G].
 // The given note may be a chord part, only the first character is considered.
 function nextLetter(note) {
@@ -55,9 +57,7 @@ function sharp2flat() {
         var flatChord = chord2flat(chord);
 
         if (flatChord != chord) {
-            chordEls[i].isContentEditable = true;
             chordEls[i].innerHTML = flatChord;
-            chordEls[i].isContentEditable = false;
         }
     }
 }
