@@ -11,13 +11,13 @@ webext-firefox:
 	cp -R common FlatUG_Firefox
 	cp ../UGChordsToFlats.js FlatUG_Firefox
 	cp firefox/* FlatUG_Firefox
-	zip -qr FlatUG_Firefox.zip FlatUG_Firefox
+	cd FlatUG_Firefox; zip -qr ../FlatUG_Firefox.zip .
 
 webext-chrome:
 	cp -R common FlatUG_Chrome
 	cp ../UGChordsToFlats.js FlatUG_Chrome
 	cp chrome/* FlatUG_Chrome
 	sed -i "s/browser\./chrome\./" FlatUG_Chrome/popup.js
-	zip -qr FlatUG_Chrome.zip FlatUG_Chrome
+	cd FlatUG_Chrome; zip -qr ../FlatUG_Chrome.zip .
 
 webext: webext-firefox webext-chrome
