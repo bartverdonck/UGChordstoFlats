@@ -54,11 +54,7 @@ function sharp2flat() {
         deactivateMouseEvents(chordEls[i]);
 
         var chord = chordEls[i].innerHTML;
-        var flatChord = chord2flat(chord);
-
-        if (flatChord != chord) {
-            chordEls[i].innerHTML = flatChord;
-        }
+        chordEls[i].innerHTML = chord2flat(chord);
     }
 }
 
