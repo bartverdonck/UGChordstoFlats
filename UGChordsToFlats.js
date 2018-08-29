@@ -6,7 +6,11 @@ function nextLetter(letter) {
 }
 
 function deactivateMouseEvents(chordEl) {
-    chordEl._listeners = {mouseover:function(){}, mouseleave:function(){}};
+    // no straight way to remove all listeners
+    // but cloned elements have no listeners
+    // chords are small nodes, so no perf issues
+    elClone = chordEl.cloneNode(true);
+    chordEl.parentNode.replaceChild(elClone, chordEl);
 }
 
 function sharp2flat() {
